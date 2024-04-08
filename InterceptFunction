@@ -1,0 +1,8 @@
+    Java.use("com.example.frida")["METHOD1/FUNCION1"].implementation = function (str) 
+    {
+        if (str == "STRINGSEARCH")
+            return (true) //Este caso usaba retornar boolean.
+        let ret = this.FUNCTION1(str);
+        //Ver resultado final.. =>  console.log(ret)
+        return ret;
+    };
